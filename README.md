@@ -74,4 +74,4 @@ Chaque rôle a des privilèges distincts dans le système.
 1. Cloner ce dépôt :
 
 ```bash
-git clone https://github.com/ton-utilisateur/e-learning-platform.git
+git clone https://github.com/amrampro/e-learning-platform-2021.git
