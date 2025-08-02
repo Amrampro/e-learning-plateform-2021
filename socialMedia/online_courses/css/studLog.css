@@ -1,0 +1,351 @@
+body{
+  font-family: sans-serif;
+  background-image: url("../img/students/bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h2{
+  margin-top: 25%;
+  color: white;
+}
+form{
+  margin-top: 3%;
+  width: 75%;
+  height: 85vh;
+  box-shadow: 0 0 10px #A2A2A2, 0 0 40px #A2A2A2;
+  border-radius: 10px;
+  background: rgba(0,0,0, 0.6);
+  /* box-shadow: 0 0 10px #212121, 0 0 40px #212121, 0 0 80px #212121;
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.6); */
+}
+.leftS{
+  /* float: left; */
+  border-radius: 10px;
+  padding-top: 5%;
+  /* background-color: red; */
+  width: 50%;
+  height: 85vh;
+}
+.inpu{
+  /* border: none;
+  border-bottom: 1.5px solid #A2A2A2;
+  width: 200%;
+  margin-left: 30%; */
+}
+/* .ico{
+  width: 10%;
+  margin-left: -50%;
+} */
+.rightS{
+  /* float: right; */
+  height: 85vh;
+  border-radius: 10px;
+  width: 50%;
+}
+.rImg{
+  margin-top: 20%;
+  margin-right: 2%;
+  opacity: 0.6;
+}
+.button{
+  background-color: #2AD84E;
+  color: white;
+  border: none;
+  height: 5vh;
+  width: 40%;
+  border-radius: 5px;
+}
+.link{
+  top: 30%;
+  color: #A2A2A2;
+}
+.button:hover{
+  background: #2AD84E;
+}
+.boxContent input{
+  background: none;
+  border: none;
+  border-bottom: 1.5px solid #A2A2A2;
+  width: 85%;
+  margin-left: 10%;
+	height: 5vh;
+  color: white;
+}
+.boxContent label{
+  width: 10%;
+  left: 18.7%;
+  margin-top: 2%;
+	position: absolute;
+	pointer-events: none;
+}
+.ico{
+  margin-left: 140%;
+  margin-top: -30%;
+  width: 20%;
+}
+.log{
+  position: absolute;
+  margin-top: -2%;
+  margin-left: -35%;
+}
+.back{
+	background-color: white;
+	width: 50%;
+	font-size: 100%;
+	font-weight: bolder;
+	height: auto;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border: 0px;
+  margin-top: -20%;
+}
+.error{
+  color: white;
+  font-size: 200%;
+}
+/*------------------
+  Responsive
+---------------------*/
+
+@media (min-width: 1200px) {
+  form{
+    margin-top: 3%;
+    width: 85%;
+    height: 85vh;
+    box-shadow: 0 0 10px #A2A2A2, 0 0 40px #A2A2A2;
+    border-radius: 10px;
+    background: rgba(0,0,0, 0.6);
+  }
+  .leftS{
+    border-radius: 10px;
+    padding-top: -2%;
+    padding-bottom: 0%;
+    width: 100%;
+    height: 85vh;
+  }
+  .ico{
+    margin-left: -200%;
+    margin-top: -30%;
+    width: 30%;
+  }
+  .button{
+    background-color: #2AD84E;
+    color: white;
+    font-size: 150%;
+    border: none;
+    height: 10%;
+    width: 50%;
+    border-radius: 5px;
+  }
+  .log{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: -35%;
+  }
+  h2{
+    margin-top: 5%;
+    color: white;
+  }
+}
+
+@media (max-width: 1705px) {
+  form{
+    margin-top: 3%;
+    width: 85%;
+    height: 85vh;
+    box-shadow: 0 0 10px #A2A2A2, 0 0 40px #A2A2A2;
+    border-radius: 10px;
+    background: rgba(0,0,0, 0.6);
+  }
+  .leftS{
+    border-radius: 10px;
+    padding-top: -2%;
+    padding-bottom: 0%;
+    width: 100%;
+    height: 85vh;
+  }
+  .ico{
+    margin-left: -200%;
+    margin-top: -30%;
+    width: 30%;
+  }
+  .button{
+    background-color: #2AD84E;
+    color: white;
+    font-size: 150%;
+    border: none;
+    height: 10%;
+    width: 50%;
+    border-radius: 5px;
+  }
+  .log{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: -35%;
+  }
+  h2{
+    margin-top: 10%;
+    color: white;
+  }
+}
+
+/* Medium screen : 992px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  form{
+    margin-top: 3%;
+    width: 85%;
+    height: 85vh;
+    box-shadow: 0 0 10px #A2A2A2, 0 0 40px #A2A2A2;
+    border-radius: 10px;
+    background: rgba(0,0,0, 0.6);
+  }
+  .leftS{
+    border-radius: 10px;
+    padding-top: -2%;
+    padding-bottom: 0%;
+    width: 100%;
+    height: 85vh;
+  }
+  .ico{
+    margin-left: -200%;
+    margin-top: -30%;
+    width: 30%;
+  }
+  .button{
+    background-color: #2AD84E;
+    color: white;
+    font-size: 150%;
+    border: none;
+    height: 10%;
+    width: 50%;
+    border-radius: 5px;
+  }
+  .log{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: -35%;
+  }
+  h2{
+    margin-top: 10%;
+    color: white;
+  }
+}
+
+/* Tablet :768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  form{
+    margin-top: 3%;
+    width: 85%;
+    height: 85vh;
+    box-shadow: 0 0 10px #A2A2A2, 0 0 40px #A2A2A2;
+    border-radius: 10px;
+    background: rgba(0,0,0, 0.6);
+  }
+  .leftS{
+    border-radius: 10px;
+    padding-top: 5%;
+    width: 100%;
+    height: 85vh;
+  }
+  .ico{
+    margin-left: -200%;
+    margin-top: -30%;
+    width: 50%;
+  }
+  .button{
+    background-color: #2AD84E;
+    color: white;
+    font-size: 150%;
+    border: none;
+    height: 10%;
+    width: 50%;
+    border-radius: 5px;
+  }
+  h2{
+    margin-top: 10%;
+    color: white;
+  }
+}
+
+/* Large Mobile :480px. */
+
+@media only screen and (max-width: 767px) {
+  form{
+    margin-top: 3%;
+    width: 85%;
+    height: 85vh;
+    box-shadow: 0 0 10px #A2A2A2, 0 0 40px #A2A2A2;
+    border-radius: 10px;
+    background: rgba(0,0,0, 0.6);
+  }
+  .leftS{
+    border-radius: 10px;
+    padding-top: 5%;
+    width: 100%;
+    height: 85vh;
+  }
+  .ico{
+    margin-left: -200%;
+    margin-top: -30%;
+    width: 50%;
+  }
+  .button{
+    background-color: #2AD84E;
+    color: white;
+    font-size: 150%;
+    border: none;
+    height: 10%;
+    width: 50%;
+    border-radius: 5px;
+  }
+  h2{
+    margin-top: 25%;
+    color: white;
+  }
+}
+
+/* Medium Mobile :480px. */
+
+@media only screen and (max-width: 576px) {
+  form{
+    margin-top: 3%;
+    width: 85%;
+    height: 85vh;
+    box-shadow: 0 0 10px #A2A2A2, 0 0 40px #A2A2A2;
+    border-radius: 10px;
+    background: rgba(0,0,0, 0.6);
+  }
+  .leftS{
+    border-radius: 10px;
+    padding-top: 5%;
+    width: 100%;
+    height: 85vh;
+  }
+  .ico{
+    margin-left: -200%;
+    margin-top: -30%;
+    width: 50%;
+  }
+  .button{
+    background-color: #2AD84E;
+    color: white;
+    font-size: 150%;
+    border: none;
+    height: 10%;
+    width: 50%;
+    border-radius: 5px;
+  }
+  h2{
+    margin-top: 25%;
+    color: white;
+  }
+}
+
+/* Small Mobile :320px. */
+
+@media only screen and (max-width: 479px) {
+
+}

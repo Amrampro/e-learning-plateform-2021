@@ -1,0 +1,23 @@
+body{
+	background: #F0F0F0;
+}
+.course{
+	background: white;
+	width: 70%;
+	border-radius: 15px;
+  box-shadow: 0 0 10px #A2A2A2, 0 0 40px #A2A2A2;
+	font-size: 25px;
+}
+.chap_cours{
+	background: white;
+	width: 85%;
+}
+#video_here{
+	width: 80%;
+	height: auto;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+#video_here video{
+	width: 100%;
+}

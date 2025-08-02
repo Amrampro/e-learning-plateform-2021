@@ -1,0 +1,40 @@
+ /*section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00adff;
+    z-index: 1;
+    mix-blend-mode: color;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+#shine{
+  font-size: 1em;
+    filter: blur(.6px);
+    font-weight: 100;
+    text-transform: initial;
+    text-shadow: 0 0 1px rgba(225, 225, 225, 1),
+                    0 0 2px rgba(225, 225, 225, 1),
+                    0 0 4px rgba(225, 225, 225, 1),
+                    0 0 8px rgba(225, 225, 225, 1),
+                    0 0 16px rgba(225, 225, 225, 1);
+}*/
+#Vm{
+  color: #FFA100;
+}
+#Bm{
+  color: #D10A00;
+}
+#Nc{
+  color: #C54200;
+}

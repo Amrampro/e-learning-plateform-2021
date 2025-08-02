@@ -1,0 +1,299 @@
+body{
+	background: url("../img/admin/adminlog.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#form{
+	width: 35%;
+	height: auto;
+	box-shadow: 0 0 10px #212121, 0 0 40px #212121, 0 0 80px #212121;
+	border-radius: 10px;
+	padding-bottom: 8%;
+	background: rgba(0, 0, 0, 0.6);
+}
+.log{
+	width: 20%;
+	height: 20%;
+}
+#txt{
+	color: white;
+	width: 50%;
+	height: 40px;
+	border: none;
+	border-bottom: 2px solid white;
+	background: none;
+}
+.btn1{
+	width: 25%;
+	height: 30px;
+	border: none;
+
+}
+.btn2{
+	width: 25%;
+	height: 30px;
+	background-color: #04FF69;
+	border: none;
+	color: white;
+}
+.btn1:hover{
+	box-shadow: 0 0 10px #ef5350, 0 0 40px #ef5350, 0 0 80px #ef5350;
+	color: red;
+}
+.btn2:hover{
+	box-shadow: 0 0 10px #04FF69, 0 0 40px #04FF69, 0 0 80px #04FF69;
+}
+.boxContent input{
+	background: none;
+	color: white;
+	width: 50%;
+	height: 5vh;
+	border: none;
+	border-bottom: 2px solid white;
+	background: none;
+}
+.boxContent label{
+	position: absolute;
+	margin-left: -17%;
+	pointer-events: none;
+	transition: .5s;
+	color: white;
+}
+.boxContent input:focus ~ label,/*Cette ligne gère la transition quand on clique sur le input*/
+.boxContent input:valid ~ label{ /* Cette ligne permet au label de rester en haut lorsque il y'a une entrée dans le input. il ne marche que l'orsque le input est déclaré en required*/
+	margin-top: -10px;
+	font-size: 12px;
+	color: #04FF69;
+}
+.error h5{
+	color: red;
+}
+.back{
+	background-color: white;
+	width: 50%;
+	font-size: 100%;
+	font-weight: bolder;
+	height: auto;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border: 0px;
+  margin-top: -20%;
+}
+
+/*------------------
+  Responsive
+---------------------*/
+
+@media (min-width: 1200px) {
+
+}
+
+/* Medium screen : 992px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	#form{
+		width: 85%;
+		height: 100%;
+		box-shadow: 0 0 10px #212121, 0 0 40px #212121, 0 0 80px #212121;
+		border-radius: 10px;
+		background: rgba(0, 0, 0, 0.6);
+	}
+	.log{
+		width: 35%;
+		height: 35%;
+	}
+	.boxContent input{
+		background: none;
+		color: white;
+		width: 85%;
+		height: 5vh;
+		border: none;
+		border-bottom: 2px solid white;
+		background: none;
+	}
+	.boxContent label{
+		position: absolute;
+		margin-left: -70%;
+		pointer-events: none;
+		transition: .5s;
+		color: white;
+	}
+	.btn1{
+		width: 30%;
+		height: 30px;
+		border: none;
+	}
+	.btn2{
+		width: 40%;
+		height: 30px;
+		background-color: #04FF69;
+		border: none;
+		color: white;
+	}
+	.btn1:hover{
+		box-shadow: 0 0 10px #ef5350, 0 0 40px #ef5350, 0 0 80px #ef5350;
+		color: red;
+	}
+	.btn2:hover{
+		box-shadow: 0 0 10px #04FF69, 0 0 40px #04FF69, 0 0 80px #04FF69;
+	}
+}
+
+/* Tablet :768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	#form{
+		width: 85%;
+		height: 100%;
+		box-shadow: 0 0 10px #212121, 0 0 40px #212121, 0 0 80px #212121;
+		border-radius: 10px;
+		background: rgba(0, 0, 0, 0.6);
+	}
+	.log{
+		width: 35%;
+		height: 35%;
+	}
+	.boxContent input{
+		background: none;
+		color: white;
+		width: 85%;
+		height: 5vh;
+		border: none;
+		border-bottom: 2px solid white;
+		background: none;
+	}
+	.boxContent label{
+		position: absolute;
+		margin-left: -70%;
+		pointer-events: none;
+		transition: .5s;
+		color: white;
+	}
+	.btn1{
+		width: 30%;
+		height: 30px;
+		border: none;
+	}
+	.btn2{
+		width: 40%;
+		height: 30px;
+		background-color: #04FF69;
+		border: none;
+		color: white;
+	}
+	.btn1:hover{
+		box-shadow: 0 0 10px #ef5350, 0 0 40px #ef5350, 0 0 80px #ef5350;
+		color: red;
+	}
+	.btn2:hover{
+		box-shadow: 0 0 10px #04FF69, 0 0 40px #04FF69, 0 0 80px #04FF69;
+	}
+}
+
+/* Large Mobile :480px. */
+
+@media only screen and (max-width: 767px) {
+	#form{
+		width: 85%;
+		height: 100%;
+		box-shadow: 0 0 10px #212121, 0 0 40px #212121, 0 0 80px #212121;
+		border-radius: 10px;
+		background: rgba(0, 0, 0, 0.6);
+	}
+	.log{
+		width: 35%;
+		height: 35%;
+	}
+	.boxContent input{
+		background: none;
+		color: white;
+		width: 85%;
+		height: 5vh;
+		border: none;
+		border-bottom: 2px solid white;
+		background: none;
+	}
+	.boxContent label{
+		position: absolute;
+		margin-left: -70%;
+		pointer-events: none;
+		transition: .5s;
+		color: white;
+	}
+	.btn1{
+		width: 30%;
+		height: 30px;
+		border: none;
+	}
+	.btn2{
+		width: 40%;
+		height: 30px;
+		background-color: #04FF69;
+		border: none;
+		color: white;
+	}
+	.btn1:hover{
+		box-shadow: 0 0 10px #ef5350, 0 0 40px #ef5350, 0 0 80px #ef5350;
+		color: red;
+	}
+	.btn2:hover{
+		box-shadow: 0 0 10px #04FF69, 0 0 40px #04FF69, 0 0 80px #04FF69;
+	}
+}
+
+/* Medium Mobile :480px. */
+
+@media only screen and (max-width: 576px) {
+	#form{
+		width: 85%;
+		height: 100%;
+		box-shadow: 0 0 10px #212121, 0 0 40px #212121, 0 0 80px #212121;
+		border-radius: 10px;
+		background: rgba(0, 0, 0, 0.6);
+	}
+	.log{
+		width: 35%;
+		height: 35%;
+	}
+	.boxContent input{
+		background: none;
+		color: white;
+		width: 85%;
+		height: 5vh;
+		border: none;
+		border-bottom: 2px solid white;
+		background: none;
+	}
+	.boxContent label{
+		position: absolute;
+		margin-left: -70%;
+		pointer-events: none;
+		transition: .5s;
+		color: white;
+	}
+	.btn1{
+		width: 30%;
+		height: 30px;
+		border: none;
+	}
+	.btn2{
+		width: 40%;
+		height: 30px;
+		background-color: #04FF69;
+		border: none;
+		color: white;
+	}
+	.btn1:hover{
+		box-shadow: 0 0 10px #ef5350, 0 0 40px #ef5350, 0 0 80px #ef5350;
+		color: red;
+	}
+	.btn2:hover{
+		box-shadow: 0 0 10px #04FF69, 0 0 40px #04FF69, 0 0 80px #04FF69;
+	}
+}
+
+/* Small Mobile :320px. */
+
+@media only screen and (max-width: 479px) {
+
+}

@@ -1,0 +1,475 @@
+/*
+* Liaup v1.0.0 (https://liaup.com)
+* Copyright 2020-2021 The Liaup Authors
+* Copyright 2020-2021 Twitter, Facebook.
+* Licensed under GoulBAM (https://)
+*/
+
+
+/*----------------------------------------------------------------------------*/
+/*-----------------------For direct background colours------------------------*/
+/*----------------------------------------------------------------------------*/
+
+.bg_none{
+  background: none;
+}
+.bg_nature{
+  background: #28C44C;
+}
+.bg_blood{
+  background: #C70300;
+}
+.bg_sky{
+  background: #38FCFF;
+}
+.bg_night{
+  background: #000000;
+}
+.bg_pencil{
+  background: #7F7F7F;
+}
+
+/*----------------------------------------------------------------------------*/
+/*------------------------------For floats------------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+.float_left{
+  float: left;
+}
+.float_right{
+  float: right;
+}
+.float_both{
+  float: both;
+}
+
+/*----------------------------------------------------------------------------*/
+/*-------------------------For navigation bar---------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+/* ------------------------Basic settings------------------------------------ */
+.navli{
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: -8px;
+  margin-top: -8px;
+  font-family: arial;
+}
+.navli a{
+  color: #ffffff;
+  text-decoration: none;
+}
+.navhead li{
+  display: inline-block;
+}
+.navhead button{
+  float: right;
+}
+.navright{
+  margin-top: -10px;
+}
+.navright form input{
+  height: 30px;
+  outline: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 2px solid #000000;
+}
+.navright form button{
+  margin-left: -5px;
+  height: 36px;
+  width: auto;
+  background: #ffffff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 2px solid #000000;
+}
+.navli .navcenter li a{
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* -------------------------Responssive settings----------------------------- */
+@media(max-width:990px){
+  .navli{
+    margin-top: -16px;
+  }
+  .navli div{
+    display: block;
+  }
+  .navhead{
+    width: 100%;
+  }
+  .navhead li{
+    /* display: inline-block; */
+  }
+  .navli .nav_elements{
+    position: absolute;
+    padding-right: 8px;
+    background: green;
+    width: 100%;
+    margin-top: -16px;
+    margin-left: -105%;
+  }
+  .navli .nav_elements{
+    transition: 1s;
+  }
+  .navcenter li{
+    display: block;
+    padding: 10px;
+    /* border-bottom: 1px solid #7F7F7F; */
+  }
+  .navright li{
+    display: block;
+    padding: 10px;
+  }
+}
+@media(min-width:990px){
+  .navli div{
+    display: inline-block;
+  }
+  .navli .navhead{
+    width: 10%;
+  }
+  .navli .nav_elements{
+    width: 89.7%;
+  }
+  .navli .nav_elements .navright{
+    float: right;
+  }
+  .navli .nav_elements li{
+    display: inline-block;
+  }
+  .navhead .navbar_toggle{
+    display: none;
+  }
+  .navhead .navbar_toggle_close{
+    display: none;
+  }
+  .navhead li{
+    display: inline-block;
+  }
+  .navcenter li{
+    /* margin-left: 25px; */
+  }
+  .navcenter .menu_drop{
+    display: none;
+  }
+  .navcenter .menu_drop li{
+    display: block;
+  }
+}
+
+/*----------------------------------------------------------------------------*/
+/*-----------------------------------For form---------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+.formli{
+  display: flex;
+  justify-content: center;
+}
+/* .form{
+width: 50%;
+padding: 20px;
+} */
+
+/*----------------------------------------------------------------------------*/
+/*----------------------------------For button--------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+/* -------------------------------Default button----------------------------- */
+.but{
+  background: #7F7F7F;
+  color: #ffffff;
+  width: auto;
+  /* width: 200px; */
+  height: 40px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+/* -----------------------Assigning button colours--------------------------- */
+.but_nature{
+  background: #28C44C;
+}
+.but_blood{
+  background: #C70300;
+}
+.but_sky{
+  background: #38FCFF;
+}
+.but_night{
+  background: #000000;
+}
+.but_pencil{
+  background: #7F7F7F;
+}
+
+/* --------------------------Button shape----------------------------------- */
+.but_round{
+  border-radius: 50px;
+}
+
+/*----------------------------------------------------------------------------*/
+/*--------------------------------For responssive-----------------------------*/
+/*----------------------------------------------------------------------------*/
+
+@media(min-width:1201px){
+  .sow_el_1{/*sow=>Screen Occupation Width, el=>Extra large*/
+    width: 10%;
+  }
+  .sow_el_2{
+    width: 20%;
+  }
+  .sow_el_3{
+    width: 30%;
+  }
+  .sow_el_4{
+    width: 40%;
+  }
+  .sow_el_5{
+    width: 50%;
+  }
+  .sow_el_6{
+    width: 60%;
+  }
+  .sow_el_7{
+    width: 70%;
+  }
+  .sow_el_8{
+    width: 80%;
+  }
+  .sow_el_9{
+    width: 90%;
+  }
+  .sow_el_10{
+    width: 100%;
+  }
+}
+@media(max-width:1200px){/*For Extra large screens*/
+  .sow_el_1{/*sow=>Screen Occupation Width, el=>Extra large*/
+    width: 10%;
+  }
+  .sow_el_2{
+    width: 20%;
+  }
+  .sow_el_3{
+    width: 30%;
+  }
+  .sow_el_4{
+    width: 40%;
+  }
+  .sow_el_5{
+    width: 50%;
+  }
+  .sow_el_6{
+    width: 60%;
+  }
+  .sow_el_7{
+    width: 70%;
+  }
+  .sow_el_8{
+    width: 80%;
+  }
+  .sow_el_9{
+    width: 90%;
+  }
+  .sow_el_10{
+    width: 100%;
+  }
+}
+@media(max-width:990px){/*For large screens*/
+  .sow_lg_1{/*lg=>large*/
+    width: 10%;
+  }
+  .sow_lg_2{
+    width: 20%;
+  }
+  .sow_lg_3{
+    width: 30%;
+  }
+  .sow_lg_4{
+    width: 40%;
+  }
+  .sow_lg_5{
+    width: 50%;
+  }
+  .sow_lg_6{
+    width: 60%;
+  }
+  .sow_lg_7{
+    width: 70%;
+  }
+  .sow_lg_8{
+    width: 80%;
+  }
+  .sow_lg_9{
+    width: 90%;
+  }
+  .sow_lg_10{
+    width: 100%;
+  }
+}
+@media(max-width:760px){/*For medium screens*/
+  .sow_me_1{/*me=>medium*/
+    width: 10%;
+  }
+  .sow_me_2{
+    width: 20%;
+  }
+  .sow_me_3{
+    width: 30%;
+  }
+  .sow_me_4{
+    width: 40%;
+  }
+  .sow_me_5{
+    width: 50%;
+  }
+  .sow_me_6{
+    width: 60%;
+  }
+  .sow_me_7{
+    width: 70%;
+  }
+  .sow_me_8{
+    width: 80%;
+  }
+  .sow_me_9{
+    width: 90%;
+  }
+  .sow_me_10{
+    width: 100%;
+  }
+}
+@media(max-width:500px){/*For phone screens*/
+  .sow_ph_1{/*ph=>phone*/
+    width: 10%;
+  }
+  .sow_ph_2{
+    width: 20%;
+  }
+  .sow_ph_3{
+    width: 30%;
+  }
+  .sow_ph_4{
+    width: 40%;
+  }
+  .sow_ph_5{
+    width: 50%;
+  }
+  .sow_ph_6{
+    width: 60%;
+  }
+  .sow_ph_7{
+    width: 70%;
+  }
+  .sow_ph_8{
+    width: 80%;
+  }
+  .sow_ph_9{
+    width: 90%;
+  }
+  .sow_ph_10{
+    width: 100%;
+  }
+}
+
+/*----------------------------------------------------------------------------*/
+/*-----------------------------For screen filling-----------------------------*/
+/*----------------------------------------------------------------------------*/
+
+.screen_fill{
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: -8px;
+}
+
+/*----------------------------------------------------------------------------*/
+/*-------------------------------For liaup icons------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+.lii{/* lii = liaup icons */
+  width: 0;
+  height: 0;
+  display: inline-block;
+  border: 10px solid transparent;
+}
+
+/* --------------------------------For caret--------------------------------- */
+.lii.caret_down{
+  border-top-color: black;
+}
+.lii.caret_right{
+  border-left-color: black;
+}
+.lii.caret_up{
+  border-bottom-color: black;
+}
+.lii.caret_left{
+  border-right-color: black;
+}
+
+/* ----------------------------Navbar toggle button-------------------------- */
+.navbar_toggle{
+  cursor: pointer;
+  height: 45px;
+  width: 50px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  float: right;
+  margin-top: 10px;
+}
+.navbar_toggle::before {
+  content: "";
+  margin-top: 5px;
+  margin-left: 5px;
+  height: 8px;
+  width: 40px;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0px 14px #ffffff;
+}
+.navbar_toggle::after {
+  content: "";
+  margin-top: 33px;
+  margin-left: 5px;
+  height: 8px;
+  width: 40px;
+  position: absolute;
+  background: #ffffff;
+}
+
+/* ----------------------------Navbar toggle close button-------------------------- */
+.navbar_toggle_close{
+  cursor: pointer;
+  height: 45px;
+  width: 50px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  float: right;
+  margin-top: 10px;
+}
+.navbar_toggle_close::before {
+  content: "";
+  transform: rotateZ(-45deg);
+  margin-top: 20px;
+  margin-left: 5px;
+  height: 8px;
+  width: 40px;
+  position: absolute;
+  background: #ffffff;
+}
+.navbar_toggle_close::after {
+  content: "";
+  transform: rotateZ(45deg);
+  margin-top: 20px;
+  margin-left: 5px;
+  height: 8px;
+  width: 40px;
+  position: absolute;
+  background: #ffffff;
+}

@@ -1,0 +1,108 @@
+/*
+ * Liaup predesigned v1.0.0 (https://liaup.com)
+ * Copyright 2020-2021 The Liaup Authors
+ * Copyright 2020-2021 Twitter, Facebook.
+ * Licensed under GoulBAM (https://)
+ */
+
+/*----------------------------------------------------------------------------*/
+/*-----------------------------------For buttons------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+/* --------------------------send plane-------------------------------------- */
+
+.pred_but{
+  overflow: hidden;
+}
+.but_plane{
+
+}
+
+/*----------------------------------------------------------------------------*/
+/*-----------------------------------For forms--------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+.pred_form{
+  display: flex;
+  justify-content: center;
+}
+
+/* ---------------------------Basic login form------------------------------------- */
+.pred_form_basic{
+  font-family:  sans-serif;
+  padding: 25px;
+  text-align: center;
+  background: rgba(255,255,255,1);
+  border-radius: 15px;
+  box-shadow: -2px 2px 2px #000000;
+}
+.pred_form_basic .form_title{
+  color: #000000;
+}
+.pred_form_basic .form_group{
+  margin-top: 40px;
+}
+.pred_form_basic .form_group label{
+  color: #000000;
+  font-weight: bold;
+  float: left;
+}
+.pred_form_basic .form_group input{
+  width: 100%;
+  height: 35px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  /* border-bottom: 2px solid black; */
+  background: none;
+}
+.pred_form_basic .form_group a{
+  display: block;
+}
+
+/* ---------------------------Basic signup form------------------------------------- */
+.pred_form_light{
+  font-family: monospace;
+  padding: 25px;
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+  position: relative;
+  overflow: hidden;
+}
+.pred_form_light::before{
+  content: "";
+  height: 200%;
+  width: 10%;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  top: 0%;
+  transform: translateX(-900px) translateY(-500px) rotate(225deg);/*"translateX(-210px)" is used to determine the position of the content before*/
+  transition: all 1.5s;/*Transition is used to determine the moving time of the content from left to right*/
+}
+.pred_form_light:hover::before{
+  transform: translateX(600px) translateY(-200px) rotate(225deg);
+}
+.pred_form_light .form_title{
+  color: #ffffff;
+}
+.pred_form_light .form_group{
+  margin-top: 40px;
+}
+.pred_form_light .form_group label{
+  color: #ffffff;
+  font-weight: bold;
+  float: left;
+  font-size: 15px;
+}
+.pred_form_light .form_group input{
+  /* position: relative; */
+  color: #ffffff;
+  width: 100%;
+  height: 35px;
+  border: 1px solid #ffffff;
+  background: none;
+  outline: none;
+  transition: .5s;
+}
+.pred_form_light .form_group a{
+  display: block;
+}

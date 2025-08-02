@@ -1,0 +1,289 @@
+body{
+  background: url("../images/bg1.jpg");
+  background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
+}
+.mp3Player{
+  background: rgba(0, 0, 0, .9);
+  /* width: 450px; */
+  height: 550px;
+  margin-top: 10px;
+}
+.simple_disk_image{
+  overflow: hidden;
+}
+.simple_disk_image img{
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+
+  animation-name: audioImg;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes audioImg {
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(90deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  75%{
+    transform: rotate(270deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.audio_player {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 35px;
+}
+.audio_player li{
+  display: inline-block;
+  margin-left: 15px;
+  overflow: hidden;
+  color: #ffffff;
+  cursor: pointer;
+}
+.audio_player li p{
+  width: 500%;
+  animation-name: mus_displace;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes mus_displace {
+  from{
+    margin-left: 100px;
+  }
+  to{
+    margin-left: -200px;
+  }
+}
+.mus_title{
+  width: 40%;
+}
+.center_task_bar{
+  background: rgba(0, 0, 0, .5);
+  width: 92px;
+  height: 92px;
+  position: absolute;
+  margin-left: 28%;
+  overflow: hidden;
+
+  border: 5px solid aqua;
+  /* border-style: ridge; */
+  border-style: dotted;
+  border-radius: 100%;
+  animation-name: testo;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes testo {
+  0%{
+    /* border: 5px solid aqua; */
+    border-style: dotted;
+    transform: rotate(0deg);
+  }
+  25%{
+    /* border: none; */
+    transform: rotate(90deg);
+  }
+  50%{
+    /* border: 5px solid aqua; */
+    border-style: dotted;
+    transform: rotate(180deg);
+  }
+  75%{
+    /* border: none; */
+    transform: rotate(270deg);
+  }
+  100%{
+    /* border: 5px solid aqua; */
+    border-style: dotted;
+    transform: rotate(360deg);
+  }
+}
+.center_task_bar img{
+  width: 100%;
+  height: auto;
+  position: fixed;
+}
+.task_bar{
+  align-items: center;
+  background: rgba(0, 0, 0, .8);
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 20px;
+}
+.task_bar div{
+  display: inline-block;
+}
+.right_task_bar{
+  float: right;
+}
+.left_task_bar{
+  /* background: red; */
+  width: auto;
+}
+.left_task_bar li, .right_task_bar li{
+  display: inline-block;
+}
+.left_task_bar li img, .right_task_bar li img{
+  width: 50px;
+  height: auto;
+  transition: .5s;
+}
+.left_task_bar li img:hover, .right_task_bar li img:hover{
+  width: 60px;
+  height: auto;
+  margin-top: -10px;
+  transform: rotate(360deg);
+}
+@font-face {
+  font-family: digital;
+  src: url("../../family_fonts/digital-7.ttf");
+}
+@font-face {
+  font-family: spacecraft;
+  src: url("../../family_fonts/SPACECRAFT.ttf");
+}
+.clock{
+  color: aqua;
+  font-family: digital;
+  font-size: 30px;
+}
+.folders{
+  padding-left: 20px;
+}
+.folders div{
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.videos_section img, .images_section img, .audios_section img, .documents_section img{
+  width: 100px;
+  height: auto;
+}
+.videos_section p, .images_section p, .audios_section p, .documents_section p{
+  padding-top: 5px;
+  /* font-family: spacecraft; */
+  font-family: fantasy;
+  font-size: 20px;
+  color: #ffffff;
+}
+.folder_contents{
+  /* position: absolute;
+  margin-left: 10%;
+  width: 80%;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 20px; */
+}
+.videos_content, .image_content, .audio_content, .documents_content{
+  position: absolute;
+  width: 80%;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  display: none;
+}
+.content_head{
+  padding-bottom: 10px;
+  border-bottom: 3px solid aqua;
+}
+.content_head .title_name{
+  font-weight: bolder;
+}
+.content_head li{
+  display: inline-block;
+}
+.content_head .close_but{
+  /* background: none; */
+  cursor: pointer;
+  font-weight: bold;
+  float: right;
+  padding: 2px;
+  border: 2px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  transition: .5s;
+}
+.close_but::before{
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  background: rgba(255, 255, 255, .8);
+  width: 120px;
+  height: 10px;
+  transform: translateX(-90px) translateY(-20px) rotate(120deg);/*"translateX(-210px)" is used to determine the position of the content before*/
+  transition: all 1s;/*Transition is used to determine the moving time of the content from left to right*/
+}
+.close_but:hover::before{
+  transform: translateX(20px) translateY(10px) rotate(120deg);
+}
+.content_head .close_but:hover{
+  background: #000000;
+  color: #ffffff;
+}
+.content_body{
+  padding: 15px;
+  height: 500px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.content_body .folder_elements{
+  display: inline-block;
+}
+.folder_elements{
+  width: 100px;
+  height: auto;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+.folder_elements a{
+  text-decoration: none;
+}
+.folder_elements img{
+  width: 100%;
+  height: auto;
+}
+.folder_elements p{
+  text-align: center;
+  font-weight: bold;
+}
+.close_player, .minimize_player{
+  cursor: pointer;
+}
+.close_player:hover, .minimize_player:hover{
+  color: #ffffff;
+}
+.label_for_filechoose{
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  background: #27AAE1;
+  transition: .5s;
+}
+.label_for_filechoose:hover{
+  background: #8DC63F;
+}
+.file_chooser{
+  display: none;
+}

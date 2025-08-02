@@ -1,0 +1,82 @@
+body{
+  background: url("../images/background/bluredbackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial;
+}
+nav a{
+  color: white;
+}
+.navLogo{
+  width: 80px;
+  height: auto;
+}
+.navbar strong{
+  font-size: 30px;
+}
+.logContainer{
+  margin-top: 6%;
+}
+.leftIndexSide{
+  color: white;
+  padding-bottom: 5%;
+}
+.leftIndexSide a{
+  color: white;
+  background: #27AAE1;
+  padding: 2%;
+  border-radius: 10px;
+  text-decoration: none;
+}
+#top{
+  padding-bottom: 1%;
+}
+#top a{
+  text-decoration: none;
+  padding: 3%;
+  background: #27AAE1;
+  border-radius: 5px;
+  color: white;
+}
+.rightIndexSide form{
+  background: white;
+  padding: 5%;
+  border-radius: 5px;
+}
+.form h2{
+  color: #27AAE1;
+}
+.rightIndexSide .form input{
+  border-radius: 25px;
+}
+.form-group a{
+  text-decoration: none;
+}
+.form-group button{
+  color: white;
+  background: #27AAE1;
+  padding: 2%;
+  border-radius: 10px;
+}
+.form .form-group{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+#top #butLog{
+  background: #197095;
+}
+#butLog:hover{
+  background: #197095;
+}
+#butReg:hover{
+  background: #197095;
+}
+.error_message{
+  color: red;
+}
+.static_field{
+  pointer-events: none;
+}
+#index_video{
+  
+}

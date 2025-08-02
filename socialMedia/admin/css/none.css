@@ -1,0 +1,12 @@
+.btn{
+  background: #292c2f;
+  color: white;
+	position: relative;/*You need "position: relative" for "overflow: hidden" to work and for the parameters in ".btn::before" to be correct*/
+	overflow: hidden;/*The overflow here hides the content part exceeding the button during hover effect*/
+	cursor: pointer;
+}
+.btn-primary{
+  width: 10%;
+  height: auto;
+  font-size: 80px;
+}
