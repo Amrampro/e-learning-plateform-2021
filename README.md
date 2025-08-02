@@ -65,7 +65,24 @@ Chaque rôle a des privilèges distincts dans le système.
 
 ## 🧪 Captures d’écran (à insérer)
 
-> 📷 Ajoutez ici des captures de l'interface (accueil, tableau de bord, espace social, cours, etc.)
+### 🟢 Page d’accueil
+![Index](screenshots/index.png)
+
+### 🔐 Interface de Connexion
+![Login](screenshots/login.png)
+
+### ⚙️ Paramètres du profil utilisateur
+![Profile Settings](screenshots/profile_settings.png)
+
+### 📁 Gestion de fichiers
+![File Storage](screenshots/file_storage.png)
+
+### 📚 Espace des cours
+![Course](screenshots/course.png)
+
+### 🧩 Diagramme de la base de données
+![Database Schema](screenshots/database.png)
+
 
 ---
 
